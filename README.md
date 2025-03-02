@@ -16,10 +16,16 @@ Add this to your `config.js`:
 {
   module: "MMM-RotaryNav",
   config: {
-    navigationMode: "modules" // "modules" or "pages" (if using MMM-Pages)
+    navigationMode: "modules", // "modules" or "pages" (if using MMM-Pages)
+    clkPin: 17,   // GPIO pin for the rotary encoder CLK
+    dtPin: 27,    // GPIO pin for the rotary encoder DT
+    swPin: 22     // GPIO pin for the rotary encoder button
   }
 }
 ```
+
+### Adjusting GPIO Pins
+If your encoder is connected to different GPIO pins, change the values of `clkPin`, `dtPin`, and `swPin` in `config.js`. These values are passed to the module automatically.
 
 ## 🎛️ Supported Actions
 - **Rotate Right** ➝ Next module/page
@@ -32,7 +38,7 @@ Add this to your `config.js`:
 ## 🚀 Usage
 Start MagicMirror:
 ```sh
-pm start
+npm start
 ```
 
 ## 📜 License
