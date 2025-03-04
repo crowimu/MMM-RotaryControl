@@ -1,0 +1,9 @@
+{
+    "name": "MMM-RotaryControl",
+    "version": "1.0.0",
+    "description": "A MagicMirror module to navigate MMM-Pages using a rotary encoder.",
+    "main": "MMM-RotaryControl.js",
+    "dependencies": {
+        "rpi-gpio-buttons": "^1.0.0"
+    }
+}
